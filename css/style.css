@@ -2,9 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,6 @@ body {
 ul {
   list-style: none;
   padding: 0; 
-  
 }
 p {
   font-weight: 100;
@@ -31,6 +28,7 @@ a {
 
 nav {
   font-family: "Roboto", Arial, Verdana;
+  background-color: #bdcad2;
   font-weight: 400;
   letter-spacing: .05em;
   padding: 25px 50px 25px 50px;
@@ -97,8 +95,9 @@ header {
 }
 .aboutMe{
   padding: 5px 15px 16px 15px;
-  color: rgb(126, 126, 126);
+  color: #1F6F8B;
   text-align: center;
+  font-family: 'Pragati Narrow', sans-serif;
 }
 .projects {
   display: block;
@@ -148,7 +147,6 @@ hr {
   align-self: center;
 }
 
-
 @media (min-width: 320px) {
     nav {
       padding: 20px 15px 18px 15px;
@@ -157,7 +155,7 @@ hr {
       height: 300px;
     }
     header {
-      height: 500px;
+      height: 550px;
     }
     footer a {
       font-size: 13px;
@@ -176,6 +174,7 @@ hr {
     }
     .intro-img {
       display: block;
+      margin-top: 15px;
       margin-left: auto;
       margin-right: auto;
       max-width: 70%;
@@ -187,6 +186,9 @@ hr {
   }
 
 @media (min-width: 768px)  {
+  .seventh img {
+    width: 400px;
+  }
   .aboutMe {
     float: left;
     text-align: left;
@@ -211,7 +213,6 @@ hr {
   footer {
     padding-bottom: 70px;
     padding-top: 20px;
-  
   }
   .col {
     flex: 1 50%;
@@ -256,10 +257,18 @@ hr {
   .col {
     flex-basis: calc(50% - 20px);
   }
+
 }
 
-
 @media (min-width: 1024px) {
+  .seventh img {
+    width: 320px;
+  }
+  .seventh p {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+  
   nav {
     padding: 40px 50px 18px 50px;
   }
@@ -298,6 +307,6 @@ hr {
   }
   .col {
     flex-basis: calc(33.333% - 20px);
-  
     }
+
   }
